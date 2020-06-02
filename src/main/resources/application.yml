@@ -1,0 +1,33 @@
+# 配置数据源
+spring: 
+  datasource: 
+    url: jdbc:mysql://localhost:3310/hr
+    username: root
+    password: 16436131
+    driverClassName: com.mysql.jdbc.Driver
+# 配置乱码解决方案
+  http:
+    encoding: 
+      force: true
+      charset: utf-8
+      enabled: true
+# 配置redis的信息
+  redis: 
+    maxActive: 1000
+    maxIdle: 30
+    maxWait: 2000
+    testOnBorrow: true
+    host: 127.0.0.1
+    port: 6379
+    timeout: 1000
+server: 
+  tomcat: 
+    uriEncoding: utf-8 
+    
+# 配置mybatis的信息
+mybatis: 
+  mapperLocations: classpath:mapper/*/*.xml
+  typeAliasesPackage:  com.dsc.hr.base.pojo
+
+    
+    
