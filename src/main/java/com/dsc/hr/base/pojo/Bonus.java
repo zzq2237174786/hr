@@ -1,7 +1,6 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -13,45 +12,43 @@ import java.sql.Timestamp;
 public class Bonus implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="bon_id")
+
 	private short bonId;
 
-	@Column(name="bonus_degree")
+
 	private String bonusDegree;
 
-	@Column(name="bonus_item")
+
 	private String bonusItem;
 
-	@Column(name="bonus_worth")
 	private BigDecimal bonusWorth;
 
-	@Column(name="check_status")
+
 	private short checkStatus;
 
-	@Column(name="check_time")
+	
 	private Timestamp checkTime;
 
 	private String checker;
 
-	@Column(name="human_id")
+
 	private String humanId;
 
-	@Column(name="human_name")
+
 	private String humanName;
 
-	@Column(name="major_id")
+
 	private String majorId;
 
-	@Column(name="major_kind_id")
+	
 	private String majorKindId;
 
-	@Column(name="major_kind_name")
 	private String majorKindName;
 
-	@Column(name="major_name")
+
 	private String majorName;
 
-	@Column(name="regist_time")
+
 	private Timestamp registTime;
 
 	private String register;

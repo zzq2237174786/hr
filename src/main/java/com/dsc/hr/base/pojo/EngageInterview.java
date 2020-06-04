@@ -1,7 +1,6 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.sql.Timestamp;
 
 
@@ -9,77 +8,66 @@ import java.sql.Timestamp;
  * The persistent class for the engage_interview database table.
  * 
  */
-@Table(name="engage_interview")
 public class EngageInterview implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Lob
-	@Column(name="check_comment")
 	private String checkComment;
 
-	@Column(name="check_status")
+
 	private short checkStatus;
 
-	@Column(name="check_time")
+
 	private Timestamp checkTime;
 
 	private String checker;
 
-	@Column(name="ein_id")
 	private short einId;
 
 	private String EQ_degree;
 
-	@Column(name="foreign_language_degree")
+
 	private String foreignLanguageDegree;
 
-	@Column(name="human_major_id")
+
 	private String humanMajorId;
 
-	@Column(name="human_major_kind_id")
 	private String humanMajorKindId;
 
-	@Column(name="human_major_kind_name")
+
 	private String humanMajorKindName;
 
-	@Column(name="human_major_name")
+	
 	private String humanMajorName;
 
-	@Column(name="human_name")
 	private String humanName;
 
-	@Column(name="image_degree")
 	private String imageDegree;
 
-	@Column(name="interview_amount")
 	private short interviewAmount;
 
-	@Lob
-	@Column(name="interview_comment")
+
 	private String interviewComment;
 
-	@Column(name="interview_status")
+
 	private short interviewStatus;
 
 	private String IQ_degree;
 
-	@Column(name="multi_quality_degree")
 	private String multiQualityDegree;
 
-	@Column(name="native_language_degree")
 	private String nativeLanguageDegree;
 
-	@Column(name="registe_time")
+	
 	private Timestamp registeTime;
 
 	private String register;
 
-	@Column(name="response_speed_degree")
+
 	private String responseSpeedDegree;
 
 	private String result;
 
-	@Column(name="resume_id")
+
 	private short resumeId;
 
 	public EngageInterview() {

@@ -1,26 +1,24 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
+
 
 
 /**
  * The persistent class for the engage_answer_details database table.
  * 
  */
-@Table(name="engage_answer_details")
+
 public class EngageAnswerDetail implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="and_id")
 	private short andId;
 
 	private String answer;
 
-	@Column(name="answer_number")
 	private String answerNumber;
 
-	@Column(name="subject_id")
+
 	private short subjectId;
 
 	public EngageAnswerDetail() {

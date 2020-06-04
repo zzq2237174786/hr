@@ -1,24 +1,24 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
+
 
 
 /**
  * The persistent class for the config_public_char database table.
  * 
  */
-@Table(name="config_public_char")
+
 public class ConfigPublicChar implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="attribute_kind")
+	
 	private String attributeKind;
 
-	@Column(name="attribute_name")
+
 	private String attributeName;
 
-	@Column(name="pbc_id")
+	
 	private short pbcId;
 
 	public ConfigPublicChar() {

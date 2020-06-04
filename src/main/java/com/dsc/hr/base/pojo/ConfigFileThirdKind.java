@@ -1,43 +1,32 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
+
 
 
 /**
  * The persistent class for the config_file_third_kind database table.
  * 
  */
-@Table(name="config_file_third_kind")
 public class ConfigFileThirdKind implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="first_kind_id")
 	private String firstKindId;
 
-	@Column(name="first_kind_name")
 	private String firstKindName;
 
-	@Column(name="ftk_id")
 	private short ftkId;
 
-	@Column(name="second_kind_id")
 	private String secondKindId;
 
-	@Column(name="second_kind_name")
 	private String secondKindName;
 
-	@Column(name="third_kind_id")
 	private String thirdKindId;
 
-	@Column(name="third_kind_is_retail")
 	private String thirdKindIsRetail;
 
-	@Column(name="third_kind_name")
 	private String thirdKindName;
 
-	@Lob
-	@Column(name="third_kind_sale_id")
 	private String thirdKindSaleId;
 
 	public ConfigFileThirdKind() {

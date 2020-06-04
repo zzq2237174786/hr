@@ -1,7 +1,6 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -10,116 +9,79 @@ import java.sql.Timestamp;
  * The persistent class for the major_change database table.
  * 
  */
-@Table(name="major_change")
 public class MajorChange implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Lob
-	@Column(name="change_reason")
 	private String changeReason;
 
-	@Lob
-	@Column(name="check_reason")
 	private String checkReason;
 
-	@Column(name="check_status")
 	private short checkStatus;
 
-	@Column(name="check_time")
 	private Timestamp checkTime;
 
 	private String checker;
 
-	@Column(name="first_kind_id")
 	private String firstKindId;
 
-	@Column(name="first_kind_name")
 	private String firstKindName;
 
-	@Column(name="human_id")
 	private String humanId;
 
-	@Column(name="human_name")
 	private String humanName;
 
-	@Column(name="major_id")
 	private String majorId;
 
-	@Column(name="major_kind_id")
 	private String majorKindId;
 
-	@Column(name="major_kind_name")
 	private String majorKindName;
 
-	@Column(name="major_name")
 	private String majorName;
 
-	@Column(name="mch_id")
 	private short mchId;
 
-	@Column(name="new_first_kind_id")
 	private String newFirstKindId;
 
-	@Column(name="new_first_kind_name")
 	private String newFirstKindName;
 
-	@Column(name="new_major_id")
 	private String newMajorId;
 
-	@Column(name="new_major_kind_id")
 	private String newMajorKindId;
 
-	@Column(name="new_major_kind_name")
 	private String newMajorKindName;
 
-	@Column(name="new_major_name")
 	private String newMajorName;
 
-	@Column(name="new_salary_standard_id")
 	private String newSalaryStandardId;
 
-	@Column(name="new_salary_standard_name")
 	private String newSalaryStandardName;
 
-	@Column(name="new_salary_sum")
 	private BigDecimal newSalarySum;
 
-	@Column(name="new_second_kind_id")
 	private String newSecondKindId;
 
-	@Column(name="new_second_kind_name")
 	private String newSecondKindName;
 
-	@Column(name="new_third_kind_id")
 	private String newThirdKindId;
 
-	@Column(name="new_third_kind_name")
 	private String newThirdKindName;
 
-	@Column(name="regist_time")
 	private Timestamp registTime;
 
 	private String register;
 
-	@Column(name="salary_standard_id")
 	private String salaryStandardId;
 
-	@Column(name="salary_standard_name")
 	private String salaryStandardName;
 
-	@Column(name="salary_sum")
 	private BigDecimal salarySum;
 
-	@Column(name="second_kind_id")
 	private String secondKindId;
 
-	@Column(name="second_kind_name")
 	private String secondKindName;
 
-	@Column(name="third_kind_id")
 	private String thirdKindId;
 
-	@Column(name="third_kind_name")
 	private String thirdKindName;
 
 	public MajorChange() {

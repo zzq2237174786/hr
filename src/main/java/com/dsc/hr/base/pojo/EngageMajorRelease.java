@@ -1,7 +1,6 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.sql.Timestamp;
 
 
@@ -9,67 +8,56 @@ import java.sql.Timestamp;
  * The persistent class for the engage_major_release database table.
  * 
  */
-@Table(name="engage_major_release")
+
 public class EngageMajorRelease implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="change_time")
+
 	private Timestamp changeTime;
 
 	private String changer;
 
 	private Timestamp deadline;
 
-	@Lob
-	@Column(name="engage_required")
 	private String engageRequired;
 
-	@Column(name="engage_type")
 	private String engageType;
 
-	@Column(name="first_kind_id")
 	private String firstKindId;
 
-	@Column(name="first_kind_name")
 	private String firstKindName;
 
-	@Column(name="human_amount")
+
 	private short humanAmount;
 
-	@Lob
-	@Column(name="major_describe")
 	private String majorDescribe;
 
-	@Column(name="major_id")
+
 	private String majorId;
 
-	@Column(name="major_kind_id")
+
 	private String majorKindId;
 
-	@Column(name="major_kind_name")
+
 	private String majorKindName;
 
-	@Column(name="major_name")
+
 	private String majorName;
 
-	@Column(name="mre_id")
+
 	private short mreId;
 
-	@Column(name="regist_time")
+
 	private Timestamp registTime;
 
 	private String register;
 
-	@Column(name="second_kind_id")
 	private String secondKindId;
 
-	@Column(name="second_kind_name")
 	private String secondKindName;
 
-	@Column(name="third_kind_id")
 	private String thirdKindId;
 
-	@Column(name="third_kind_name")
 	private String thirdKindName;
 
 	public EngageMajorRelease() {

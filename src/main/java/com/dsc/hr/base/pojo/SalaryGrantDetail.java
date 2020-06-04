@@ -1,7 +1,6 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.math.BigDecimal;
 
 
@@ -9,35 +8,28 @@ import java.math.BigDecimal;
  * The persistent class for the salary_grant_details database table.
  * 
  */
-@Table(name="salary_grant_details")
+
 public class SalaryGrantDetail implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="bouns_sum")
 	private BigDecimal bounsSum;
 
-	@Column(name="deduct_sum")
 	private BigDecimal deductSum;
 
-	@Column(name="grd_id")
 	private short grdId;
 
-	@Column(name="human_id")
 	private String humanId;
 
-	@Column(name="human_name")
 	private String humanName;
 
-	@Column(name="salary_grant_id")
 	private String salaryGrantId;
 
-	@Column(name="salary_paid_sum")
+
 	private BigDecimal salaryPaidSum;
 
-	@Column(name="salary_standard_sum")
+
 	private BigDecimal salaryStandardSum;
 
-	@Column(name="sale_sum")
 	private BigDecimal saleSum;
 
 	public SalaryGrantDetail() {

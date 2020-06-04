@@ -1,7 +1,6 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.sql.Timestamp;
 
 
@@ -9,32 +8,32 @@ import java.sql.Timestamp;
  * The persistent class for the engage_exam database table.
  * 
  */
-@Table(name="engage_exam")
+
 public class EngageExam implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="exa_id")
+	
 	private short exaId;
 
-	@Column(name="exam_number")
+	
 	private String examNumber;
 
-	@Column(name="limite_time")
+
 	private short limiteTime;
 
-	@Column(name="major_id")
+	
 	private String majorId;
 
-	@Column(name="major_kind_id")
+
 	private String majorKindId;
 
-	@Column(name="major_kind_name")
+
 	private String majorKindName;
 
-	@Column(name="major_name")
+
 	private String majorName;
 
-	@Column(name="regist_time")
+
 	private Timestamp registTime;
 
 	private String register;

@@ -1,33 +1,29 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
+
 
 
 /**
  * The persistent class for the config_major database table.
  * 
  */
-@Table(name="config_major")
 public class ConfigMajor implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="major_id")
 	private String majorId;
 
-	@Column(name="major_kind_id")
 	private String majorKindId;
 
-	@Column(name="major_kind_name")
+
 	private String majorKindName;
 
-	@Column(name="major_name")
+
 	private String majorName;
 
-	@Column(name="mak_id")
+	
 	private short makId;
 
-	@Column(name="test_amount")
 	private short testAmount;
 
 	public ConfigMajor() {

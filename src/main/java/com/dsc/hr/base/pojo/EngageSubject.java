@@ -1,7 +1,6 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.sql.Timestamp;
 
 
@@ -9,61 +8,43 @@ import java.sql.Timestamp;
  * The persistent class for the engage_subjects database table.
  * 
  */
-@Table(name="engage_subjects")
+
 public class EngageSubject implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="change_time")
 	private Timestamp changeTime;
 
 	private String changer;
 
-	@Lob
+
 	private String content;
 
-	@Column(name="correct_key")
 	private String correctKey;
 
 	private String derivation;
 
-	@Column(name="first_kind_id")
 	private String firstKindId;
 
-	@Column(name="first_kind_name")
 	private String firstKindName;
 
-	@Lob
-	@Column(name="key_a")
 	private String keyA;
 
-	@Lob
-	@Column(name="key_b")
 	private String keyB;
 
-	@Lob
-	@Column(name="key_c")
 	private String keyC;
 
-	@Lob
-	@Column(name="key_d")
 	private String keyD;
 
-	@Lob
-	@Column(name="key_e")
 	private String keyE;
 
-	@Column(name="regist_time")
 	private Timestamp registTime;
 
 	private String register;
 
-	@Column(name="second_kind_id")
 	private String secondKindId;
 
-	@Column(name="second_kind_name")
 	private String secondKindName;
 
-	@Column(name="sub_id")
 	private short subId;
 
 	public EngageSubject() {

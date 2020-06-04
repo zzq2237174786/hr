@@ -1,166 +1,124 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.sql.Timestamp;
-
 
 /**
  * The persistent class for the engage_resume database table.
  * 
  */
-@Table(name="engage_resume")
+
 public class EngageResume implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="attachment_name")
 	private String attachmentName;
 
-	@Column(name="check_status")
 	private short checkStatus;
 
-	@Column(name="check_time")
 	private Timestamp checkTime;
 
 	private String checker;
 
-	@Column(name="demand_salary_standard")
 	private double demandSalaryStandard;
 
-	@Column(name="engage_type")
 	private String engageType;
 
-	@Column(name="human_address")
+	
 	private String humanAddress;
 
-	@Column(name="human_age")
+
 	private short humanAge;
 
-	@Column(name="human_birthday")
 	private Timestamp humanBirthday;
 
-	@Column(name="human_birthplace")
+	
 	private String humanBirthplace;
 
-	@Column(name="human_college")
+
 	private String humanCollege;
 
-	@Column(name="human_educated_degree")
+	
 	private String humanEducatedDegree;
 
-	@Column(name="human_educated_major")
 	private String humanEducatedMajor;
 
-	@Column(name="human_educated_years")
+	
 	private short humanEducatedYears;
 
-	@Column(name="human_email")
+	
 	private String humanEmail;
 
-	@Lob
-	@Column(name="human_history_records")
 	private String humanHistoryRecords;
 
-	@Column(name="human_hobby")
+
 	private String humanHobby;
 
-	@Column(name="human_homephone")
 	private String humanHomephone;
 
-	@Column(name="human_idcard")
 	private String humanIdcard;
 
-	@Column(name="human_major_id")
 	private String humanMajorId;
 
-	@Column(name="human_major_kind_id")
 	private String humanMajorKindId;
 
-	@Column(name="human_major_kind_name")
 	private String humanMajorKindName;
 
-	@Column(name="human_major_name")
 	private String humanMajorName;
 
-	@Column(name="human_mobilephone")
 	private String humanMobilephone;
 
-	@Column(name="human_name")
 	private String humanName;
 
-	@Column(name="human_nationality")
 	private String humanNationality;
 
-	@Column(name="human_party")
 	private String humanParty;
 
-	@Column(name="human_picture")
 	private String humanPicture;
 
-	@Column(name="human_postcode")
 	private String humanPostcode;
 
-	@Column(name="human_race")
 	private String humanRace;
 
-	@Column(name="human_religion")
 	private String humanReligion;
 
-	@Column(name="human_sex")
 	private String humanSex;
 
-	@Column(name="human_specility")
 	private String humanSpecility;
 
-	@Column(name="human_telephone")
 	private String humanTelephone;
 
-	@Column(name="interview_status")
 	private short interviewStatus;
 
-	@Column(name="pass_check_status")
 	private short passCheckStatus;
 
-	@Column(name="pass_check_time")
 	private Timestamp passCheckTime;
 
 	private String pass_checkComment;
 
-	@Column(name="pass_checker")
 	private String passChecker;
 
 	private String pass_passComment;
 
-	@Column(name="pass_regist_time")
 	private Timestamp passRegistTime;
 
-	@Column(name="pass_register")
 	private String passRegister;
 
-	@Lob
 	private String recomandation;
 
-	@Column(name="regist_time")
 	private Timestamp registTime;
 
 	private String register;
 
-	@Lob
 	private String remark;
 
-	@Column(name="res_id")
 	private short resId;
-
-	@Column(name="test_amount")
+	
 	private short testAmount;
 
-	@Column(name="test_check_time")
 	private Timestamp testCheckTime;
 
-	@Column(name="test_checker")
 	private String testChecker;
 
-	@Column(name="total_points")
 	private double totalPoints;
 
 	public EngageResume() {

@@ -1,7 +1,6 @@
 package com.dsc.hr.base.pojo;
 
 import java.io.Serializable;
-import javax.persistence.*;
 import java.math.BigDecimal;
 import java.sql.Timestamp;
 
@@ -10,57 +9,41 @@ import java.sql.Timestamp;
  * The persistent class for the salary_grant database table.
  * 
  */
-@Table(name="salary_grant")
 public class SalaryGrant implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Column(name="check_status")
 	private short checkStatus;
 
-	@Column(name="check_time")
 	private Timestamp checkTime;
 
 	private String checker;
 
-	@Column(name="first_kind_id")
 	private String firstKindId;
 
-	@Column(name="first_kind_name")
 	private String firstKindName;
 
-	@Column(name="human_amount")
 	private short humanAmount;
 
-	@Column(name="regist_time")
 	private Timestamp registTime;
 
 	private String register;
 
-	@Column(name="salary_grant_id")
 	private String salaryGrantId;
 
-	@Column(name="salary_paid_sum")
 	private BigDecimal salaryPaidSum;
 
-	@Column(name="salary_standard_id")
 	private String salaryStandardId;
 
-	@Column(name="salary_standard_sum")
 	private BigDecimal salaryStandardSum;
 
-	@Column(name="second_kind_id")
 	private String secondKindId;
 
-	@Column(name="second_kind_name")
 	private String secondKindName;
 
-	@Column(name="sgr_id")
 	private short sgrId;
 
-	@Column(name="third_kind_id")
 	private String thirdKindId;
 
-	@Column(name="third_kind_name")
 	private String thirdKindName;
 
 	public SalaryGrant() {
