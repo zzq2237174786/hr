@@ -9,7 +9,7 @@ import javax.persistence.*;
  * 
  */
 @Table(name="users")
-public class User implements Serializable {
+public class Users implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Column(name="u_id")
@@ -24,7 +24,7 @@ public class User implements Serializable {
 	@Column(name="u_true_name")
 	private String uTrueName;
 
-	public User() {
+	public Users() {
 	}
 
 	public short getUId() {

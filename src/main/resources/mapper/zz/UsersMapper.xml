@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 映射配置 hibernate是 表示映射关系 而mybatis是上sql语句 -->
+<!-- namespace表示唯一，一般用全路径表示 -->
+<mapper namespace="com.dsc.hr.zz.mapper.UsersMapper">
+	<!-- 字段对接 -->
+	<resultMap type="Users" id="usersMap">
+		<id column="u_id" property="uId"/>
+		<result column="u_name" property="uName"/>
+		<result column="u_true_name" property="uTrueName"/>
+		<result column="u_password" property="uPassword"/>
+	</resultMap>
+	
+	<!-- 验证账号是否存在 -->
+	<select id="selectAll"  resultMap="usersMap">
+		select * from users
+	</select>
+</mapper>
