@@ -5,7 +5,7 @@
 	
 	
 	
-		<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" href="table.css" type="text/css" />
 		<link rel="stylesheet" type="text/css" media="all"
 			href="javascript/calendar/calendar-win2k-cold-1.css">
@@ -14,20 +14,20 @@
 		<script type="text/javascript" src="javascript/comm/list.js"></script>
 		<script type="text/javascript">
 		var subcat = new Array(2);
-subcat[0] = ["1", "¼¯ÍÅ/Èí¼þ¹«Ë¾","¼¯ÍÅ","¼¯ÍÅ/Èí¼þ¹«Ë¾"];
-subcat[1] = ["2", "¼¯ÍÅ/ÉúÎï¿Æ¼¼ÓÐÏÞ¹«Ë¾","¼¯ÍÅ","¼¯ÍÅ/ÉúÎï¿Æ¼¼ÓÐÏÞ¹«Ë¾"];
+subcat[0] = ["1", "é›†å›¢/è½¯ä»¶å…¬å¸","é›†å›¢","é›†å›¢/è½¯ä»¶å…¬å¸"];
+subcat[1] = ["2", "é›†å›¢/ç”Ÿç‰©ç§‘æŠ€æœ‰é™å…¬å¸","é›†å›¢","é›†å›¢/ç”Ÿç‰©ç§‘æŠ€æœ‰é™å…¬å¸"];
 var subcat1 = new Array(2);
-subcat1[0] = ["1", "Íâ°ü×é", "¼¯ÍÅ/Èí¼þ¹«Ë¾/Íâ°ü×é","¼¯ÍÅ/Èí¼þ¹«Ë¾"];
-subcat1[1] = ["2", "Ò©µê", "¼¯ÍÅ/ÉúÎï¿Æ¼¼ÓÐÏÞ¹«Ë¾/Ò©µê","¼¯ÍÅ/ÉúÎï¿Æ¼¼ÓÐÏÞ¹«Ë¾"];
+subcat1[0] = ["1", "å¤–åŒ…ç»„", "é›†å›¢/è½¯ä»¶å…¬å¸/å¤–åŒ…ç»„","é›†å›¢/è½¯ä»¶å…¬å¸"];
+subcat1[1] = ["2", "è¯åº—", "é›†å›¢/ç”Ÿç‰©ç§‘æŠ€æœ‰é™å…¬å¸/è¯åº—","é›†å›¢/ç”Ÿç‰©ç§‘æŠ€æœ‰é™å…¬å¸"];
 var subcat2 = new Array(8);
-subcat2[0] = ["1", "ÇøÓò¾­Àí", "ÏúÊÛ/ÇøÓò¾­Àí", "ÏúÊÛ"];
-subcat2[1] = ["2", "×Ü¾­Àí", "ÏúÊÛ/×Ü¾­Àí", "ÏúÊÛ"];
-subcat2[2] = ["3", "ÏîÄ¿¾­Àí", "Èí¼þ¿ª·¢/ÏîÄ¿¾­Àí", "Èí¼þ¿ª·¢"];
-subcat2[3] = ["4", "³ÌÐòÔ±", "Èí¼þ¿ª·¢/³ÌÐòÔ±", "Èí¼þ¿ª·¢"];
-subcat2[4] = ["5", "ÈËÊÂ¾­Àí", "ÈËÁ¦×ÊÔ´/ÈËÊÂ¾­Àí", "ÈËÁ¦×ÊÔ´"];
-subcat2[5] = ["6", "×¨Ô±", "ÈËÁ¦×ÊÔ´/×¨Ô±", "ÈËÁ¦×ÊÔ´"];
-subcat2[6] = ["7", "Ö÷ÈÎ", "Éú²ú²¿/Ö÷ÈÎ", "Éú²ú²¿"];
-subcat2[7] = ["8", "¼¼Êõ¹¤ÈË", "Éú²ú²¿/¼¼Êõ¹¤ÈË", "Éú²ú²¿"];
+subcat2[0] = ["1", "åŒºåŸŸç»ç†", "é”€å”®/åŒºåŸŸç»ç†", "é”€å”®"];
+subcat2[1] = ["2", "æ€»ç»ç†", "é”€å”®/æ€»ç»ç†", "é”€å”®"];
+subcat2[2] = ["3", "é¡¹ç›®ç»ç†", "è½¯ä»¶å¼€å‘/é¡¹ç›®ç»ç†", "è½¯ä»¶å¼€å‘"];
+subcat2[3] = ["4", "ç¨‹åºå‘˜", "è½¯ä»¶å¼€å‘/ç¨‹åºå‘˜", "è½¯ä»¶å¼€å‘"];
+subcat2[4] = ["5", "äººäº‹ç»ç†", "äººåŠ›èµ„æº/äººäº‹ç»ç†", "äººåŠ›èµ„æº"];
+subcat2[5] = ["6", "ä¸“å‘˜", "äººåŠ›èµ„æº/ä¸“å‘˜", "äººåŠ›èµ„æº"];
+subcat2[6] = ["7", "ä¸»ä»»", "ç”Ÿäº§éƒ¨/ä¸»ä»»", "ç”Ÿäº§éƒ¨"];
+subcat2[7] = ["8", "æŠ€æœ¯å·¥äºº", "ç”Ÿäº§éƒ¨/æŠ€æœ¯å·¥äºº", "ç”Ÿäº§éƒ¨"];
 
  		function list()
 		{
@@ -55,16 +55,16 @@ subcat2[7] = ["8", "¼¼Êõ¹¤ÈË", "Éú²ú²¿/¼¼Êõ¹¤ÈË", "Éú²ú²¿"];
 			<table width="100%">
 				<tr>
 					<td>
-						<font color="#0000CC">ÄúÕýÔÚ×öµÄÒµÎñÊÇ£ºÈËÁ¦×ÊÔ´--ÈËÁ¦×ÊÔ´µµ°¸¹ÜÀí--ÈËÁ¦×ÊÔ´µµ°¸²éÑ¯ </font>
+						<font color="#0000CC">æ‚¨æ­£åœ¨åšçš„ä¸šåŠ¡æ˜¯ï¼šäººåŠ›èµ„æº--äººåŠ›èµ„æºæ¡£æ¡ˆç®¡ç†--äººåŠ›èµ„æºæ¡£æ¡ˆæŸ¥è¯¢ </font>
 					</td>
 				</tr>
 				<tr>
 					<td align="right">
-						<input type="button" value="EXCELÁÐ±í"
+						<input type="button" value="EXCELåˆ—è¡¨"
 							class="BUTTON_STYLE1" onclick="javascript:doExport('excel');">
-						<input type="button" value="²éÑ¯"
+						<input type="button" value="æŸ¥è¯¢"
 							class="BUTTON_STYLE1" onclick="javascript:list();">
-						<input type="button" value="ËÑË÷"
+						<input type="button" value="æœç´¢"
 							class="BUTTON_STYLE1" onclick="search();">
 					</td>
 				</tr>
@@ -74,19 +74,19 @@ subcat2[7] = ["8", "¼¼Êõ¹¤ÈË", "Éú²ú²¿/¼¼Êõ¹¤ÈË", "Éú²ú²¿"];
 				class="TABLE_STYLE1">
 				<tr class="TR_STYLE1">
 					<td width="16%" class="TD_STYLE1">
-						ÇëÑ¡ÔñÔ±¹¤ËùÔÚI¼¶»ú¹¹
+						è¯·é€‰æ‹©å‘˜å·¥æ‰€åœ¨Içº§æœºæž„
 					</td>
 					<td width="84%" class="TD_STYLE2">
 						<select name="item.firstKindName" size="5" onchange="changelocation(document.forms[0].elements['item.secondKindName'],document.forms[0].elements['item.firstKindName'].options[document.forms[0].elements['item.firstKindName'].selectedIndex].value)" class="SELECT_STYLE2"><option value="">&nbsp;</option>
 							
-								<option value="¼¯ÍÅ">¼¯ÍÅ</option>
+								<option value="é›†å›¢">é›†å›¢</option>
 							
 								<option value="02">02</option></select>
 					</td>
 				</tr>
 				<tr>
 					<td class="TD_STYLE1">
-						ÇëÑ¡ÔñÔ±¹¤ËùÔÚII¼¶»ú¹¹
+						è¯·é€‰æ‹©å‘˜å·¥æ‰€åœ¨IIçº§æœºæž„
 					</td>
 					<td width="84%" class="TD_STYLE2">
 						<select name="item.secondKindName" size="5" onchange="changelocation1(document.forms[0].elements['item.thirdKindName'],document.forms[0].elements['item.secondKindName'].options[document.forms[0].elements['item.secondKindName'].selectedIndex].value)" class="SELECT_STYLE2"><script language="javascript">
@@ -96,7 +96,7 @@ subcat2[7] = ["8", "¼¼Êõ¹¤ÈË", "Éú²ú²¿/¼¼Êõ¹¤ÈË", "Éú²ú²¿"];
 				</tr>
 				<tr class="TR_STYLE1">
 					<td width="16%" class="TD_STYLE1">
-						ÇëÑ¡ÔñÔ±¹¤ËùÔÚIII¼¶»ú¹¹
+						è¯·é€‰æ‹©å‘˜å·¥æ‰€åœ¨IIIçº§æœºæž„
 					</td>
 					<td width="84%" class="TD_STYLE2">
 						<select name="item.thirdKindName" size="5" class="SELECT_STYLE2"><script language="javascript">
@@ -106,23 +106,23 @@ subcat2[7] = ["8", "¼¼Êõ¹¤ÈË", "Éú²ú²¿/¼¼Êõ¹¤ÈË", "Éú²ú²¿"];
 				</tr>
 				<tr>
 					<td class="TD_STYLE1">
-						ÇëÑ¡ÔñÖ°Î»·ÖÀà
+						è¯·é€‰æ‹©èŒä½åˆ†ç±»
 					</td>
 					<td width="84%" class="TD_STYLE2">
 						<select name="item.humanMajorKindName" size="5" onchange="changelocation2(document.forms[0].elements['item.hunmaMajorName'],document.forms[0].elements['item.humanMajorKindName'].options[document.forms[0].elements['item.humanMajorKindName'].selectedIndex].value)" class="SELECT_STYLE2"><option value="">&nbsp;</option>
 							
-								<option value="ÏúÊÛ">ÏúÊÛ</option>
+								<option value="é”€å”®">é”€å”®</option>
 							
-								<option value="Èí¼þ¿ª·¢">Èí¼þ¿ª·¢</option>
+								<option value="è½¯ä»¶å¼€å‘">è½¯ä»¶å¼€å‘</option>
 							
-								<option value="ÈËÁ¦×ÊÔ´">ÈËÁ¦×ÊÔ´</option>
+								<option value="äººåŠ›èµ„æº">äººåŠ›èµ„æº</option>
 							
-								<option value="Éú²ú²¿">Éú²ú²¿</option></select>
+								<option value="ç”Ÿäº§éƒ¨">ç”Ÿäº§éƒ¨</option></select>
 					</td>
 				</tr>
 				<tr class="TR_STYLE1">
 					<td width="16%" class="TD_STYLE1">
-						ÇëÑ¡ÔñÖ°Î»Ãû³Æ
+						è¯·é€‰æ‹©èŒä½åç§°
 					</td>
 					<td width="84%" class="TD_STYLE2">
 						<select name="item.hunmaMajorName" size="5" class="SELECT_STYLE2"><script language="javascript">
@@ -132,11 +132,11 @@ subcat2[7] = ["8", "¼¼Êõ¹¤ÈË", "Éú²ú²¿/¼¼Êõ¹¤ÈË", "Éú²ú²¿"];
 				</tr>
 				<tr>
 					<td class="TD_STYLE1">
-						ÇëÊäÈë½¨µµÊ±¼ä
+						è¯·è¾“å…¥å»ºæ¡£æ—¶é—´
 					</td>
 					<td width="84%" class="TD_STYLE2">
-						<input type="text" name="item.str_startTime" value="" style="width:14% " class="INPUT_STYLE2" id="date_start">ÖÁ<input type="text" name="item.str_endTime" value="" style="width:14% " class="INPUT_STYLE2" id="date_end">
-						£¨YYYY-MM-DD£©
+						<input type="text" name="item.str_startTime" value="" style="width:14% " class="INPUT_STYLE2" id="date_start">è‡³<input type="text" name="item.str_endTime" value="" style="width:14% " class="INPUT_STYLE2" id="date_end">
+						ï¼ˆYYYY-MM-DDï¼‰
 					</td>
 				</tr>
 			</table>

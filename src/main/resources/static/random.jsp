@@ -4,8 +4,8 @@
 //set Chinese Char 
 //Cody by JarryLi@gmail.com;
 //homepage:jiarry.126.com
-request.setCharacterEncoding("GBK");
-response.setCharacterEncoding("GBK");
+request.setCharacterEncoding("UTF-8");
+response.setCharacterEncoding("UTF-8");
 response.setContentType("text/html; charset=GBK");
 %>
 <%
